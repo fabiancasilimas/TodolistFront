@@ -17,6 +17,7 @@ import { MyListsPage } from '../pages/my-lists/my-lists';
 
 import { HttpClientModule  } from "@angular/common/http";
 import { AuthServiceProvider } from '../providers/auth-service/auth-service';
+import { ListServiceProvider } from '../providers/list-service/list-service';
 
 
 
@@ -51,7 +52,8 @@ import { AuthServiceProvider } from '../providers/auth-service/auth-service';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    AuthServiceProvider
+    AuthServiceProvider,
+    ListServiceProvider
   ]
 })
 export class AppModule {}
